@@ -1,4 +1,4 @@
-# react-drum-machine
+# React Drum Machine
 *__This is the code I wrote to complete the freeCodeCamp "Build A Drum Machine" challenge on Codepen.__*
 
 *The code is raw, unrefactored.* Since this was a code challenge I was trying to complete, I didn't delete the commented out code because I was more concerned with learning, experimenting, and completing the challenge than commented out code affecting the code's appearance. 
