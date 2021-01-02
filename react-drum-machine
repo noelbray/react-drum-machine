@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <title>React Drum Machine</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale" /> 
+  <meta name="author" content="Noel Bray" />
+  <meta name="description" content='This is my solution to the freeCodeCamp "Build A Drum Machine" challenge. Feel free to drum away."
+  
+  <link rel="stylesheet" href="css/main.css" />
+  
+  <script defer src="js/main.js" />
+  <!-- React external scripts -->
+  <script async src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script async src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>  
+  
+</head>
+
+<body>
+
+  <noscript>
+    Sorry, your browser does not support JavaScript and unfurtunately, some 
+    website freatures may not work, some website functionality may be lost.
+  </noscript>
+  
+  <p id="attribution">Source of sound effects: FreeCodeCamp (P.S. FCC, if I shouldn't have used the absolute links to your sound clips, I'm sorry.)</p>
+  <audio id="audio-test" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+
+  <div id="reactApp"></div>
+
+</body>
+
+</html>
