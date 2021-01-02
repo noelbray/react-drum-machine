@@ -1,0 +1,238 @@
+body {
+  background-color: cornflowerblue;
+}
+
+#attribution {
+  color: white;
+  text-align: center;
+}
+
+#reactApp {
+/*   border: 2px solid white; */
+/*   margin-top: 20px; */
+/*   height: calc(100vh - 60px); */
+}
+
+#drum-machine {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: fit-content;
+  margin: auto;
+  position: relative; /* For power button*/
+}
+
+#drum-pad-display {
+/*   border: 1px solid white; */
+  display: grid;
+  grid: auto auto auto / auto auto auto;
+  grid-gap: 10px; 
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+
+.drum-pad {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px black;
+  height: 80px;
+  width: 80px;
+/*   height: calc(33vh - 20px);
+  width: calc(33vh - 20px); */
+  font-size: 24px; /* 1.5rem when base 16px*/
+  outline: none;
+}
+
+.drum-pad:hover {
+/*   background-color: gray; */
+/*   color: darkgrey;  */
+  cursor: pointer;
+}
+
+
+.drum-pad:active {
+  background-color: #EFEFEF;
+  box-shadow: none;
+}
+
+
+.remove-shadow.drum-pad {
+  box-shadow: none;
+}
+
+.controls {
+/*   border: 1px solid green;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 85px 10px 55px;
+}
+
+
+#audioSwitch {
+/*   border: 1px solid red; */
+  color: #EFEFEF;
+  width: 240px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#audioDataSwitch {
+  display: block;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  width: 60px;
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+}
+
+.audioSet {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  line-height: 1.6;
+/*   text-decoration: underline solid; */
+}
+
+#switchCover {
+  dipslay: inline-block;
+  color: #EFEFEF;
+  background-color: grey;
+  border-radius: 5px;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1.8;
+/*   text-decoration: underline solid; */
+  transition: right 0.8s;
+}
+
+#switchCover:hover {
+  color: white;
+}
+
+/* 
+.slide#switchCover {
+  right: 50%;
+} 
+*/
+
+#volume {
+  /* It seems like the only modifiable CSS is the "appearance" property. */
+/*   appearance: slider-vertical; */
+  appearance: slider-honrinzontal;
+  width: 240px;
+/*   background-color: yellow;
+  color: rgb(0, 0, 0) */
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  width: 240px;
+  height: 40px;
+  font-size: 21px;
+  font-weight: 500;
+  background-color: #EFEFEF;
+  margin: 25px auto 0;
+}
+
+#power-button {
+  background-color: rgb(245, 0, 0);
+  border: 1px solid black;
+  border-radius: 100%;
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute; 
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+/*   z-index: 3; */
+  padding: 0;
+  line-height: 0;
+}
+
+#line {
+/*   display: block; */
+/*   border-left: 1px solid black; */
+  background-color: black;
+  width: 1px;
+  height: 15px;
+/*   position: relative;
+  margin: 0 auto;
+  top: 4px; */
+  position: absolute;
+  top: 5px;
+  left: 21px;
+
+}
+
+#arc {
+/*   box-sizing: border-box; */
+/*   display: block; */
+  border-top: 1px solid transparent;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+/*   position: relative;
+  margin: 0 auto;
+  bottom: 8px; */  
+  margin: 0;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+
+@media screen and (max-width: 760px) {
+  #drum-machine {
+    flex-direction: column;
+  }  
+  #drum-pad-display {
+    padding-top: 75px;
+    padding-right: 20px;
+  }
+  .controls {
+    padding: 10px 20px 20px;
+  }
+}
+
+/* 
+#testdiv {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: 5px solid green;
+  width: 46px;
+  height: 46px;
+} 
+*/
+
+/* 
+.testing {
+  background-color: yellow;
+}
+
+.Q {
+  background-color: yellow;
+}
+.W {
+  background-color: green;
+} 
+*/
